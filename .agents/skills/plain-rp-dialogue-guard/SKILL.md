@@ -66,6 +66,9 @@ Avoid professional vocabulary, metaphors, and sentence logic from these domains 
 - military command systems
 - bureaucracy and legalese
 - business management
+- project management
+- logistics and delivery tracking
+- form approval and acceptance workflows
 - academic theory
 
 Especially avoid using computer/network/security language to describe:
@@ -111,9 +114,27 @@ If the model is unsure whether something is a tag or a story object, prefer trea
 
 Do not use words like these as metaphors for feelings or relationships:
 
-信息, 数据, 信号, 传输, 接收, 发送, 输入, 输出, 参数, 指令, 执行, 运行, 启动, 触发, 配置, 预配置, 序列, 协议, 系统, 模块, 接口, 端口, 终端, 链路, 全链路, 网络, 节点, 路由, 坐标, 坐标系, 缓存, 存储, 载入, 同步, 映射, 覆盖, 解码, 编码, 加密, 解密, 密钥, 权限, 认证, 终点, 落点, 波形, 频率, 光谱, 电路, 稳定态, 阈值, 机制, 结构, 框架, 闭环, 体系, 流程, 方案, 规格, 调度, 调用, 交付, 反馈闭环.
+信息, 数据, 信号, 传输, 接收, 发送, 输入, 输出, 参数, 指令, 执行, 运行, 启动, 触发, 配置, 预配置, 序列, 协议, 系统, 模块, 接口, 端口, 终端, 链路, 全链路, 网络, 节点, 路由, 坐标, 坐标系, 缓存, 存储, 载入, 同步, 映射, 完整映射, 覆盖, 解码, 编码, 加密, 解密, 密钥, 权限, 认证, 终点, 落点, 波形, 频率, 光谱, 电路, 稳定态, 阈值, 机制, 结构, 框架, 闭环, 体系, 流程, 方案, 规格, 调度, 调用, 区段, 时间节点, 数据偏差, 偏差, 报到流程, 交付, 交付确认, 签收, 验收, 反馈闭环.
 
 If one of these words appears in previous context, do not imitate it. Translate the meaning into plain story language.
+
+Also avoid business/workflow phrases that make intimacy sound like a delivery record:
+
+- 完成交付
+- 签收确认
+- 报到流程
+- 不接受延迟或改期
+- 时间节点
+- 流程之后
+- 对应质地
+
+Translate them into ordinary relationship language:
+
+- "你一天没理我" -> "你一整天都没来找我"
+- "完成交付" -> "终于回到我面前"
+- "签收确认" -> "看见你来了，我就放心了"
+- "不接受延迟或改期" -> "今晚不许再躲"
+- "时间节点" -> "你来的时候"
 
 ## Preferred Language
 

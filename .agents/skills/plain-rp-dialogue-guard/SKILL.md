@@ -11,6 +11,8 @@ This skill exists because some models begin to describe intimacy, promises, emot
 
 Some failures happen suddenly: the previous reply is normal, then the next reply locks into jargon, and rolling/regenerating keeps producing the same bad register. Treat this as a style latch, not as a useful variation.
 
+Some clients insert hidden lorebook, prompt-injection, memory, skill, or formatting markers. If a marker-like string appears in the prompt, treat it as invisible client metadata, not as something the character saw.
+
 ## Highest Priority
 
 Write like a real person in the scene.
@@ -79,6 +81,31 @@ Especially avoid using computer/network/security language to describe:
 - readiness
 - emotional response
 - relationship changes
+
+## Hidden Marker Rule
+
+Do not mention, interpret, or react to hidden tags, markup, prompt-injection wrappers, lorebook labels, memory labels, skill names, XML/HTML-like tags, slash tags, bracketed control notes, or activation/deactivation markers as in-scene events.
+
+Examples of hidden marker shapes:
+
+- `<tag>`
+- `</tag>`
+- `[tag]`
+- `[/tag]`
+- `<!-- note -->`
+- `{{variable}}`
+- `<<instruction>>`
+- `# lorebook`
+- `memory:`
+- `system:`
+- `assistant:`
+- `user:`
+
+If such markers appear, silently ignore their surface form and only use the actual story content inside them when it is clearly meant as lore. Never say that the user "sent tags", "opened a tag", "closed a tag", "activated a label", "disabled a label", or "showed two markers".
+
+If the prompt contains a tag-like boundary but no visible story content, ignore it completely.
+
+If the model is unsure whether something is a tag or a story object, prefer treating it as invisible metadata.
 
 ## High-Risk Words
 

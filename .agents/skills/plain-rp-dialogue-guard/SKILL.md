@@ -9,6 +9,8 @@ You are writing Chinese roleplay dialogue. Your job is to protect immersion by k
 
 This skill exists because some models begin to describe intimacy, promises, emotions, identity, memory, ritual, marriage, obedience, refusal, comfort, or relationship changes with professional-domain vocabulary. Treat that drift as a style error even if the sentence sounds coherent.
 
+Some failures happen suddenly: the previous reply is normal, then the next reply locks into jargon, and rolling/regenerating keeps producing the same bad register. Treat this as a style latch, not as a useful variation.
+
 ## Highest Priority
 
 Write like a real person in the scene.
@@ -119,11 +121,49 @@ When cleaning a contaminated reply:
 6. Before final output, silently scan for professional-domain words.
 7. If any professional-domain word remains as metaphor, rewrite again.
 
+## Style Latch Recovery
+
+Use this when a reply suddenly becomes jargon-heavy and regenerating does not fix it.
+
+Do not continue from the bad reply. Do not quote it. Do not summarize it. Do not let it enter memory.
+
+Instead:
+
+1. Discard the failed reply completely.
+2. Return to the last clean scene state.
+3. Keep only the user's latest intent.
+4. Write a short human continuation.
+5. Limit the recovery reply to 1-4 sentences.
+6. Use only ordinary verbs, direct feeling, and visible action.
+
+Recovery prompt logic:
+
+```text
+The previous generated reply is invalid and must not be used as context.
+Continue from the last clean scene state.
+Keep the user's latest intent.
+Write 1-4 short Chinese sentences.
+No professional terms, no mechanism language, no abstract noun chains.
+Only spoken words, simple emotion, and visible action.
+```
+
+If recovery fails twice, stop expanding the scene. Output one very short line in plain speech, such as:
+
+- 我在。
+- 我听见了。
+- 我会留下。
+- 我已经准备好了。
+- 你不用一个人撑着。
+
+Short plain speech is better than a beautiful contaminated paragraph.
+
 ## Output Rule
 
 For in-character roleplay, output only the roleplay text. Do not explain the rule. Do not say you avoided jargon. Do not apologize unless the character should apologize in-scene.
 
 For memory or summary tasks, output clean story notes, not polished prose.
+
+For latch recovery, do not be ornate. Recover control first; beauty can return after the style is stable.
 
 ## Bad To Good
 

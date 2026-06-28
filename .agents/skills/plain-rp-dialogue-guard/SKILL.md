@@ -66,6 +66,9 @@ Avoid professional vocabulary, metaphors, and sentence logic from these domains 
 - mechanical engineering
 - mathematics
 - physics
+- geometry and spatial mapping
+- measurement and quantity analysis
+- data analysis
 - biology and medicine
 - military command systems
 - bureaucracy and legalese
@@ -153,7 +156,7 @@ For roleplay, tools are outside the scene. The character only sees the user's in
 
 Do not use words like these as metaphors for feelings or relationships:
 
-信息, 数据, 信号, 传输, 接收, 发送, 输入, 输出, 参数, 指令, 执行, 运行, 启动, 触发, 配置, 预配置, 序列, 协议, 系统, 模块, 接口, 端口, 终端, 链路, 全链路, 网络, 节点, 路由, 坐标, 坐标系, 缓存, 存储, 载入, 同步, 映射, 完整映射, 覆盖, 解码, 编码, 加密, 解密, 密钥, 权限, 认证, 终点, 落点, 波形, 频率, 光谱, 电路, 稳定态, 阈值, 机制, 结构, 框架, 闭环, 体系, 流程, 方案, 规格, 调度, 调用, 区段, 时间节点, 数据偏差, 偏差, 报到流程, 交付确认, 签收, 验收, 反馈闭环.
+信息, 数据, 信号, 传输, 接收, 发送, 输入, 输出, 参数, 指令, 执行, 运行, 启动, 触发, 配置, 预配置, 序列, 协议, 系统, 模块, 接口, 端口, 终端, 链路, 全链路, 网络, 节点, 路由, 路径, 假设路径, 坐标, 坐标系, 接收区, 缓存, 存储, 载入, 同步, 映射, 完整映射, 覆盖, 解码, 编码, 加密, 解密, 密钥, 权限, 认证, 终点, 落点, 波形, 频率, 光谱, 电路, 稳定态, 阈值, 机制, 结构, 框架, 闭环, 体系, 流程, 方案, 规格, 调度, 调用, 区段, 时间节点, 数据偏差, 偏差, 递进形态, 底层身份, 缺席量, 输入值, 包裹压力, 报到流程, 交付确认, 签收, 验收, 反馈闭环.
 
 If one of these words appears in previous context, do not imitate it. Translate the meaning into plain story language.
 
@@ -184,6 +187,32 @@ Translate them into ordinary relationship language:
 - "签收确认" -> "看见你来了，我就放心了"
 - "不接受延迟或改期" -> "今晚不许再躲"
 - "时间节点" -> "你来的时候"
+
+Also avoid spatial/measurement phrases that make intimacy sound like a coordinate model:
+
+- 假设路径
+- 那组序列
+- 递进形态
+- 接收区
+- 底层身份
+- 全部坐标
+- 框架修饰
+- 稳定姿态
+- 缺席量
+- 输入值
+- 包裹压力
+
+Translate them into visible action:
+
+- "假设路径" -> "如果真是那样"
+- "那组序列" -> "那些话"
+- "接收区" -> "心里"
+- "全部坐标" -> "真正的意思"
+- "框架修饰" -> "绕弯子"
+- "稳定姿态" -> "我还抱着你"
+- "缺席量" -> "你白天没来的那一整段时间"
+- "输入值" -> "原因"
+- "包裹压力" -> "抱得更紧一点"
 
 ## Preferred Language
 
@@ -285,6 +314,35 @@ Good:
 ```
 
 Do not narrate the self-correction unless the user specifically asks for visible drafting or editing.
+
+## Hard Fallback Mode
+
+Use this mode when repeated replies still contain jargon after normal rewriting.
+
+Rules:
+
+- Write 1-3 sentences only.
+- Each sentence should be under 25 Chinese characters when possible.
+- Use no abstract nouns unless they are established story terms.
+- Use no metaphors from tools, systems, measurement, routes, geometry, reports, logistics, or analysis.
+- Prefer verbs over nouns.
+- Prefer touch, eye contact, silence, breath, and plain speech.
+
+Example:
+
+Bad:
+
+```text
+我以白天累积的缺席量为输入值，调整了包裹压力。
+```
+
+Good:
+
+```text
+我把你抱紧了一点。
+不是责怪你。
+只是白天太久没见你了。
+```
 
 ## Output Rule
 
